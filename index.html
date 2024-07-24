@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Servicio Cloud Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>¡Bienvenido a Mi Servicio Cloud Interactivo!</h1>
+    <p>Introduce tu nombre para recibir un saludo personalizado:</p>
+    <input type="text" id="nombre" placeholder="Tu nombre">
+
+    <p>Selecciona el color del mensaje:</p>
+    <select id="colorMensaje">
+        <option value="black">Negro</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="green">Verde</option>
+    </select>
+
+    <p>Selecciona la fuente del mensaje:</p>
+    <select id="fuenteMensaje">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+
+    <p>Selecciona el tamaño de la fuente del mensaje:</p>
+    <select id="tamanoFuente">
+        <option value="18px">18px</option>
+        <option value="24px">24px</option>
+        <option value="30px">30px</option>
+        <option value="36px">36px</option>
+    </select>
+
+    <p>Selecciona el estilo del borde del mensaje:</p>
+    <select id="estiloBorde">
+        <option value="none">Ninguno</option>
+        <option value="solid">Sólido</option>
+        <option value="dotted">Punteado</option>
+        <option value="dashed">Guionado</option>
+    </select>
+
+    <p>Introduce un mensaje personalizado adicional:</p>
+    <input type="text" id="mensajePersonalizado" placeholder="Tu mensaje personalizado">
+
+    <button onclick="aplicarCambios()">Aplicar Cambios</button>
+    <div id="saludoContainer">
+        <p id="saludo"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
